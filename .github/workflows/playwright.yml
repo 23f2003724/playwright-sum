@@ -19,9 +19,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./playwright-sum
 
       - name: Install Playwright Browsers
         run: npx playwright install
+        working-directory: ./playwright-sum
 
       - name: Run script 23f2003724@ds.study.iitm.ac.in
         run: node index.js
+        working-directory: ./playwright-sum
